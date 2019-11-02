@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="painel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200" prefWidth="307.0" stylesheets="@ArquivoCSS.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetoppi.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="63.0" layoutY="150.0" onAction="#login" text="LOGIN" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Button fx:id="sair" layoutX="161.0" layoutY="150.0" mnemonicParsing="false" onAction="#sair" prefHeight="33.0" prefWidth="91.0" text="SAIR" />
+      <TextField fx:id="login" layoutX="63.0" layoutY="54.0" prefHeight="37.0" prefWidth="186.0" />
+      <PasswordField fx:id="senha" layoutX="63.0" layoutY="100.0" prefHeight="37.0" prefWidth="186.0" />
+      <Label layoutX="78.0" layoutY="23.0" text="LOGIN BARBOSA M.M." />
+    </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="900.0" stylesheets="@ArquivoCSS.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projetoppi.NovoController">
+  <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="principal" layoutX="6.0" layoutY="385.0" prefHeight="170.0" prefWidth="900.0" AnchorPane.bottomAnchor="-172.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="385.0">
+               <children>
+                  <Button fx:id="excluir" layoutX="170.0" layoutY="61.0" mnemonicParsing="false" onAction="#excluir" prefHeight="52.0" prefWidth="125.0" text="EXCLUIR" />
+                  <Button fx:id="adicionar" layoutX="31.0" layoutY="60.0" mnemonicParsing="false" onAction="#adicionar" prefHeight="52.0" prefWidth="125.0" text="ADICIONAR" />
+                  <Button fx:id="voltar" layoutX="742.0" layoutY="61.0" mnemonicParsing="false" onAction="#voltar" prefHeight="52.0" prefWidth="133.0" text="VOLTAR" />
+                  <Button fx:id="editar" layoutX="308.0" layoutY="61.0" mnemonicParsing="false" onAction="#editar" prefHeight="52.0" prefWidth="125.0" text="EDITAR" />
+                  <Button fx:id="proximos" layoutX="596.0" layoutY="61.0" mnemonicParsing="false" onAction="#proximos" prefHeight="52.0" prefWidth="133.0" text="PROXIMOS" />
+               </children>
+            </AnchorPane>
+            <TableView fx:id="tabela" editable="true" prefHeight="383.0" prefWidth="900.0">
+              <columns>
+                <TableColumn fx:id="referencia" prefWidth="123.0" text="REFERENCIA" />
+                <TableColumn fx:id="descricao" prefWidth="264.0" text="DESCRIÇÃO" />
+                  <TableColumn fx:id="maquina" minWidth="3.0" prefWidth="166.0" text="MÁQUINA UTILIZADA" />
+                  <TableColumn fx:id="chegada" prefWidth="107.0" text="CHEGADA" />
+                  <TableColumn fx:id="usinagem" prefWidth="104.0" text="INICIO USINAGEM" />
+                  <TableColumn fx:id="ENTREGA" minWidth="0.0" prefWidth="134.0" text="ENTRAGA" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="visivel" prefHeight="170.0" prefWidth="900.0" visible="false">
+         <children>
+            <Label layoutX="531.0" layoutY="40.0" text="Data de Chegada" />
+            <TextField fx:id="referencia2" layoutX="32.0" layoutY="39.0" />
+            <Label layoutX="246.0" layoutY="43.0" text="Referencia" />
+            <TextField fx:id="descricao2" layoutX="32.0" layoutY="83.0" />
+            <Label layoutX="531.0" layoutY="84.0" text="Data do Inicio de Usinagem" />
+            <Label layoutX="531.0" layoutY="130.0" text="Data de Entrega" />
+            <DatePicker fx:id="entrega2" layoutX="364.0" layoutY="128.0" prefHeight="25.0" prefWidth="149.0" />
+            <DatePicker fx:id="inicio2" layoutX="364.0" layoutY="82.0" prefHeight="25.0" prefWidth="149.0" />
+            <DatePicker fx:id="chegada2" layoutX="364.0" layoutY="38.0" prefHeight="25.0" prefWidth="149.0" />
+            <Label layoutX="246.0" layoutY="130.0" text="Máquina Usada" />
+            <Label layoutX="248.0" layoutY="84.0" text="Descrição" />
+            <TextField fx:id="maquina2" layoutX="32.0" layoutY="129.0" />
+            <Button fx:id="cancelar" layoutX="740.0" layoutY="104.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="42.0" prefWidth="125.0" text="CANCELAR" />
+            <Button fx:id="pronto" layoutX="740.0" layoutY="50.0" mnemonicParsing="false" onAction="#pronto" prefHeight="42.0" prefWidth="125.0" text="PRONTO" />
+         </children>
+      </AnchorPane>
+  </children>
+</VBox>
